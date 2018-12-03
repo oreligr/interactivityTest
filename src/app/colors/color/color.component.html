@@ -1,0 +1,14 @@
+<div class="color">
+  <div class="row">
+    <div class="col-6">
+      <div class="color-name" [ngStyle]="{'color': color.hexValue}">
+        {{color.colorName}}
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="color-value" [ngStyle]="{'background-color': color.hexValue}">
+        {{color.hexValue}}
+      </div>
+    </div>
+  </div>
+</div>

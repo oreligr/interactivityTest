@@ -1,0 +1,18 @@
+<div class="colors">
+  <h2 class="text-center">Colors List</h2>
+  <div class="col-6 offset-3">
+    <div class="sort">
+      <span>Sort-by</span>
+      <div class="sort-actions">
+        <div class="sort-action sort-action--asc" (click)="sortAsc()"></div>
+        <div class="sort-action sort-action--desc" (click)="sortDesc()"></div>
+      </div>
+
+    </div>
+    <div *ngFor="let color of colors">
+      <app-color  [color]="color"></app-color>
+    </div>
+  </div>
+
+
+</div>
